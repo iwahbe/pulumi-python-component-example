@@ -1,0 +1,14 @@
+name: simple-file-component-example
+runtime: yaml
+description: A simple example of using the file component
+
+resources:
+  myFile:
+    type: file-component:index:FileComponent
+    properties:
+      content: "Hello, Pulumi Component!"
+      path: "/tmp/example-component-file.txt"
+      force: true
+
+outputs:
+  filePath: ${myFile.file}
