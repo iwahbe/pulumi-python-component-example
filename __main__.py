@@ -1,11 +1,11 @@
-"""Entry point for the file component provider."""
+"""Entry point for the random component provider."""
 
 from pulumi.provider.experimental import component_provider_host
-from filecomponent import FileComponent
+from randomcomponent import RandomComponent
 
 
 if __name__ == "__main__":
     component_provider_host(
-        name="file-component",
-        components=[FileComponent]
+        name="random-component",
+        components=[RandomComponent]
     )

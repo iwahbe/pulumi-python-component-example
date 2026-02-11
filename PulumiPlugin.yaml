@@ -3,4 +3,4 @@ runtime:
   options:
     virtualenv: .venv
 packages:
-  file: https://github.com/iwahbe/pulumi-go-provider-example@0.0.0-x268620d6c62955ff1c7535f520f94fbcaf8d6bfd
+  prandom: github.com/ringods/pulumi-prandom@e5330dd3aa04643f72c0129b2f9913f5e51072b5
